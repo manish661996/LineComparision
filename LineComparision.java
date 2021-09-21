@@ -105,5 +105,18 @@ public class LineComparision {
 
 	}
 
+	//method to print which line is greator,smaller or equal
+	public void compareTo(LineComparision lc2) {
+		LineComparision l2=lc2;
+		if(this.lengthOfLine == l2.lengthOfLine)
+			System.out.println("Lines are equal");
+		else {
+			if(this.lengthOfLine > l2.lengthOfLine)
+				System.out.println("L1 line is greator than L2 line");
+			else
+				System.out.println("L2 line is greator than L1 line");
+		}
+	}
+
 
 }
