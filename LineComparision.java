@@ -83,7 +83,27 @@ public class LineComparision {
 		System.out.println("length of line is : "+lengthOfLine);
 	}
 
-	
+	//method to print equality of two lines on the basis of end points
+	public void equals(LineComparision lc2) {
+
+		LineComparision l2=lc2;
+		if(this.xi == l2.xi && this.yi == l2.yi) {
+			if(this.xf==l2.xf && this.yf==l2.yf) {
+				System.out.println("lines are equal");
+			}
+			else {
+				if(this.lengthOfLine==l2.lengthOfLine)
+					System.out.println("lines are equal");
+			}
+		}
+		else {
+			if(this.lengthOfLine==l2.lengthOfLine)
+				System.out.println("lines are equal");
+			else
+				System.out.println("lines are not equal");
+		}
+
+	}
 
 
 }
